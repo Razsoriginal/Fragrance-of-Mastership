@@ -31,8 +31,4 @@ Contributions are welcome and encouraged! If you find any bugs or issues with th
 
 ## Credits
 
-This app was created by [Your Name Here].
-
-## License
-
-This project is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for more information.
+This app was created by The Strong Rope (a.s)
