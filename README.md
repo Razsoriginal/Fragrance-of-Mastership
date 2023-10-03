@@ -1,16 +1,55 @@
-# fragrance_of_mastership
+# Fragrance of Mastership
 
-A new Flutter project.
+![App Logo](app_logo.png)
 
-## Getting Started
+This Flutter application is designed for Android devices and is part of The Strong Rope project, an initiative by The Strong Rope organization (https://thestrongrope.com). Fragrance of Mastership provides access to various features and resources related to Islamic traditions, including Hadiths, blogs, insights, events, quizzes, notifications, and class statistics.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Fragrance Traditions (Islamic Hadiths):** Access to a vast collection of authentic Hadiths.
+- **Blog from The Strong Rope:** Stay updated with insightful blogs from The Strong Rope.
+- **Insights from The Strong Rope:** Gain valuable insights from The Strong Rope.
+- **Events:** Stay informed about all events organized by The Strong Rope.
+- **Quiz:** Take class quizzes from The Strong Rope.
+- **Notifications:** Receive important notifications and updates.
+- **Class Statistics:** Access statistics related to your classes and activities.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technologies Used
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter SDK:** Building the mobile application.
+- **Dart Programming Language:** Programming language for Flutter.
+- **NestJS:** Backend framework (Note: Backend components are not part of this repository).
+- **MongoDB:** Database (Note: Backend components are not part of this repository).
+
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot_1.png)
+![Screenshot 2](screenshots/screenshot_2.png)
+![Screenshot 3](screenshots/screenshot_3.png)
+
+## Installation
+
+To install and run this app on your Android device, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Make sure you have Flutter and Dart installed on your system.
+3. Open the project in your preferred code editor.
+4. Connect your Android device to your computer.
+5. Build and run the app on your device.
+
+## Contributing
+
+Contributions are welcome and encouraged! If you find any bugs or issues with the app, please submit an issue on the [GitHub repository](https://github.com/yourusername/your-repository-name/issues). If you would like to contribute to the codebase, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+This app is created and maintained by The Strong Rope organization (https://thestrongrope.com).
+
+---
+
+**Note:** This repository only contains the Flutter project. Backend components, such as NestJS and MongoDB, are not included in this repository. Firebase Authentication components have also been removed. If you require access to Firebase or any backend components, please contact us at razaabbassayyed14@gmail.com. We welcome contributions and collaboration to enhance this project.
+
