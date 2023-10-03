@@ -1,0 +1,41 @@
+// next todo
+
+After doing the backend accept the articles category list from the database.
+
+Need to app pagination support to traditions list.
+very important for rendering otherwise there will be rendering issues.
+
+// if reloaded the data then show loading data and restart the whole app.
+4. on user update data - save it in hive and then also update cloud firestore database
+5. on login - fetch all the data and store in hive.
+
+7. implement auth backend and save user data in hive
+9. After all this start working on blog and qna and other pages.
+
+change fonts for urdu. Arabic done.
+Fix routes and add condition that if user is logged in start from home otherwise start from splash screen
+
+// for quiz section do a bottom tab bar
+one for video and description and the other one for quiz
+
+fix notes hive + improve styling of hadith page and rename traditions screen to home screen
+
+Features:
+1. Fragrance of Mastership - [traditions, collections, notes, star(favourite)]
+2. TSR Blog - [Blog, comments, bookmark]
+3. Q&A - [Blog, comments, bookmark]
+3. Events - [All TSR events (title, image(scrollable), descp, dates)]
+4. QUiz - [Quiz(upcoming, past and on going), winner for past quizes, quiz video + quiz form]
+5. Notification - [All TSR notifications (yt, events, quiz, shahadat, wiladat, etc)]
+For More - Maybe we can add class details or register for a class if not in a class [quiz, performance, syllabus, etc]
+ A separate admin panel to handle all this things
+
+To do Traditions - change the static paddings & sized box height width - dynamic getProp....
+Fix the colors and ui
+Also add the collections and notes in profile page.
+
+
+Create dynamic page for quiz - a widget where it will accept the data and displays a card like umar's car card
+Also on click on it it will open a page to show it's related video/ descp/time/dates/winners/etc
+
+Update - deprict the fetching of traditions from the firebase for now and use that json from fragrance app.

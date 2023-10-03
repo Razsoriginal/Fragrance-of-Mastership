@@ -1,0 +1,72 @@
+name: fragrance_of_mastership
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  flutter_svg: ^2.0.7
+  share_plus: ^6.3.1
+  firebase_core: ^2.14.0
+  cloud_firestore: ^4.8.2
+  firebase_auth: ^4.6.3
+  google_sign_in: ^6.1.4
+  flutter_html: 3.0.0-beta.2
+  hive:
+  hive_flutter:
+  http:
+  restart_app: ^1.2.1
+  url_launcher: ^6.1.10
+  webview_flutter: ^4.2.4
+  random_avatar: ^0.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  hive_generator:
+  build_runner:
+
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/
+
+
+  fonts:
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/muli/Muli-Light.ttf
+          weight: 300
+
+    - family: noorehuda
+      fonts:
+        - asset: assets/fonts/noorehuda/noorehuda Regular.ttf
+
+    - family: Jameel
+      fonts:
+        - asset: assets/fonts/Noto-Nastaliq-Urdu-Regular/NotoNastaliqUrdu-Regular.ttf
+
+        #   For, now may be we can use one box only like all in one and store it diffecrently like in different object or array. For notes, it will be like tradition index, and note's content. For collections there will be a array in which there will be collection name and it's color and inside a list there will be tradition index. There can be multiple collections like with different names and it's colors. Also for articles there will be a bookmark list in which articles id will be stored
