@@ -18,8 +18,10 @@ This Flutter application is designed for Android devices and is part of The Stro
 
 - **Flutter SDK:** Building the mobile application.
 - **Dart Programming Language:** Programming language for Flutter.
-- **NestJS:** Backend framework (Note: Backend components are not part of this repository).
-- **MongoDB:** Database (Note: Backend components are not part of this repository).
+
+---
+
+**Note:** The backend components (NestJS and MongoDB) for this project are not part of this repository. If you require access to the backend code, please visit the corresponding backend repository at [Nest.js-Backend](https://github.com/Razsoriginal/Nest.js-Backend). Firebase Authentication components have also been removed. For collaboration or contributions to the backend, please contact me at razaabbassayyed14@gmail.com.
 
 ## Screenshots
 
@@ -47,9 +49,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Credits
 
-This app is created and maintained by The Strong Rope organization (https://thestrongrope.com).
-
----
-
-**Note:** This repository only contains the Flutter project. Backend components, such as NestJS and MongoDB, are not included in this repository. Firebase Authentication components have also been removed. If you require access to Firebase or any backend components, please contact us at razaabbassayyed14@gmail.com. We welcome contributions and collaboration to enhance this project.
-
+This app is created and maintained by [The Strong Rope organization](https://thestrongrope.com).
