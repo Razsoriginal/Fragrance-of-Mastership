@@ -19,16 +19,16 @@ class AppDropdownInput extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _AppDropdownInputState createState() => _AppDropdownInputState();
+  State<AppDropdownInput> createState() => _AppDropdownInputState();
 }
 
 class _AppDropdownInputState extends State<AppDropdownInput> {
-  late String selectedValue;
+  late String _selectedValue;
 
   @override
   void initState() {
     super.initState();
-    selectedValue = widget.value;
+    _selectedValue = widget.value;
   }
 
   @override
@@ -45,14 +45,14 @@ class _AppDropdownInputState extends State<AppDropdownInput> {
             floatingLabelBehavior: FloatingLabelBehavior.always,
             labelText: widget.hintText,
           ),
-          isEmpty: selectedValue.isEmpty,
+          isEmpty: _selectedValue.isEmpty,
           child: DropdownButtonHideUnderline(
             child: DropdownButton<String>(
-              value: selectedValue,
+              value: _selectedValue,
               isDense: true,
               onChanged: (newValue) {
                 setState(() {
-                  selectedValue = newValue!;
+                  _selectedValue = newValue!;
                   widget.onChanged(newValue);
                 });
               },

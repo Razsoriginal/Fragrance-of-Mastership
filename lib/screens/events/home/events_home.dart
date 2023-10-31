@@ -8,7 +8,14 @@ class EventsHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notes)),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.collections_bookmark_outlined)),
+        ],
+      ),
       body: const Body(),
     );
   }

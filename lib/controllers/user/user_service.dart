@@ -26,7 +26,8 @@ class FragranceUserService {
 
       final userData = jsonDecode(response.body);
       final user = FragranceUser.fromMap(userData);
-
+      final userid = user.id;
+      print("User id: $userid");
       _hiveService.box.put(user.email, user);
     } else {
       throw Exception('Failed to fetch user data');
@@ -75,6 +76,8 @@ class FragranceUserService {
   FragranceUser? getSavedUser() {
     if (_hiveService.box.isNotEmpty) {
       final FragranceUser? user = _hiveService.box.getAt(0);
+      final userId = user?.id;
+      print("UserIfd from hive: $userId");
       return user;
     }
     return null;

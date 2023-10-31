@@ -24,7 +24,7 @@ class _EditProfileFormState extends State<EditProfileForm> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController nameController = TextEditingController();
   TextEditingController phoneNumberController = TextEditingController();
-  late String gender;
+  String gender = "Male";
   String ageGroup = '15 to 25';
   String preferredLang = "English";
   TextEditingController countryController = TextEditingController();
@@ -124,8 +124,10 @@ class _EditProfileFormState extends State<EditProfileForm> {
                   value: gender,
                   getLabel: (String value) => value,
                   onChanged: (value) {
+                    print(gender);
                     setState(() {
                       gender = value;
+                      print("After: $gender");
                     });
                   },
                 ),
@@ -287,8 +289,9 @@ class _EditProfileFormState extends State<EditProfileForm> {
   }
 
   void updateUserData() async {
-    // Create a FragranceUser object with the updated data
     final userProvider = context.read<UserProvider>();
+
+    print(gender);
 
     final updatedUser = FragranceUser(
       name: nameController.text,

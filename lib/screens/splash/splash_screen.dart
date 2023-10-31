@@ -5,6 +5,7 @@ import 'components/body.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
+
   static String routeName = "/splash";
 
   @override

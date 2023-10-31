@@ -29,13 +29,14 @@ class FragranceUserAdapter extends TypeAdapter<FragranceUser> {
       city: fields[9] as String,
       zipCode: fields[10] as String,
       userClass: fields[11] as String,
+      id: fields[12] as String?,
     );
   }
 
   @override
   void write(BinaryWriter writer, FragranceUser obj) {
     writer
-      ..writeByte(12)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.token)
       ..writeByte(1)
@@ -59,7 +60,9 @@ class FragranceUserAdapter extends TypeAdapter<FragranceUser> {
       ..writeByte(10)
       ..write(obj.zipCode)
       ..writeByte(11)
-      ..write(obj.userClass);
+      ..write(obj.userClass)
+      ..writeByte(12)
+      ..write(obj.id);
   }
 
   @override

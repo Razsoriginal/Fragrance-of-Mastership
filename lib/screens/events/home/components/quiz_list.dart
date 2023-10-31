@@ -4,8 +4,8 @@ import 'package:fragrance_of_mastership/screens/quiz/quiz_page/quiz_page.dart';
 import '../../../../constants/sizes.dart';
 import 'info_card.dart';
 
-class QuizList extends StatelessWidget {
-  const QuizList({
+class EventsList extends StatelessWidget {
+  const EventsList({
     super.key,
     required this.date,
     required this.subject,
@@ -13,6 +13,7 @@ class QuizList extends StatelessWidget {
     required this.title,
     required this.description,
     required this.id,
+    required this.image,
   });
 
   final String date;
@@ -21,6 +22,7 @@ class QuizList extends StatelessWidget {
   final String title;
   final String description;
   final String id;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -37,15 +39,19 @@ class QuizList extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Wrap(
-              spacing: 10,
-              runSpacing: 10,
+            Row(
               children: [
                 InfoCard(
                   text: date,
                 ),
+                const SizedBox(
+                  width: 10,
+                ),
                 InfoCard(
                   text: subject,
+                ),
+                const SizedBox(
+                  width: 10,
                 ),
                 InfoCard(text: quizClass),
               ],

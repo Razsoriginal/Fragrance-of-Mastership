@@ -40,6 +40,9 @@ class FragranceUser {
   @HiveField(11)
   String userClass;
 
+  @HiveField(12)
+  String? id;
+
   FragranceUser({
     this.token,
     required this.name,
@@ -53,6 +56,7 @@ class FragranceUser {
     required this.city,
     required this.zipCode,
     required this.userClass,
+    this.id,
   });
 
   factory FragranceUser.fromMap(Map<String, dynamic> map) {
@@ -69,6 +73,7 @@ class FragranceUser {
       city: map['city'],
       zipCode: map['zipCode'],
       userClass: map['userClass'],
+      id: map['_id'] as String,
     );
   }
 

@@ -4,19 +4,19 @@ import '../../../../models/appdata/events/events_model.dart';
 import '../events_service.dart';
 
 class EventsProvider extends ChangeNotifier {
-  late final EventsService quizService;
-  List<EventsModel> _quizzes = [];
+  late final EventsService eventsService;
+  List<EventsModel> _events = [];
 
   EventsProvider() {
-    quizService = EventsService();
+    eventsService = EventsService();
   }
 
-  List<EventsModel> get quizzes => _quizzes;
+  List<EventsModel> get event => _events;
 
   Future<void> loadQuizzes() async {
     try {
-      final quizzes = await quizService.fetchQuizzes();
-      _quizzes = quizzes;
+      final quizzes = await eventsService.fetchQuizzes();
+      _events = quizzes;
       notifyListeners();
     } catch (e) {
       print('Error loading quizzes: $e');

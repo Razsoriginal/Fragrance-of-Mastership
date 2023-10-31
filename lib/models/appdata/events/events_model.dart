@@ -7,20 +7,23 @@ class EventsModel {
   final String description;
   final String tokenFormField;
   final String lectureLink;
+  final String image;
   final DateTime startDate;
   final DateTime endDate;
 
-  EventsModel(
-      {required this.id,
-      required this.title,
-      required this.subject,
-      required this.fClass,
-      required this.formLink,
-      required this.description,
-      required this.tokenFormField,
-      required this.lectureLink,
-      required this.endDate,
-      required this.startDate});
+  EventsModel({
+    required this.id,
+    required this.title,
+    required this.subject,
+    required this.fClass,
+    required this.formLink,
+    required this.description,
+    required this.tokenFormField,
+    required this.lectureLink,
+    required this.image,
+    required this.endDate,
+    required this.startDate,
+  });
 
   factory EventsModel.fromJson(Map<String, dynamic> json) {
     return EventsModel(
@@ -32,6 +35,7 @@ class EventsModel {
       description: json['description'] ?? '',
       tokenFormField: json['tokenFormField'] ?? '',
       lectureLink: json['lectureLink'] ?? '',
+      image: json['imageLink'] ?? '',
       startDate: json['startDate'] != null
           ? DateTime.parse(json['startDate'])
           : DateTime.now(),

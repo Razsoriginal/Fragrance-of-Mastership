@@ -6,7 +6,7 @@ part of 'insights_model.dart';
 // TypeAdapterGenerator
 // **************************************************************************
 
-class InsightsAdapter extends TypeAdapter<InsightModel> {
+class InsightModelAdapter extends TypeAdapter<InsightModel> {
   @override
   final int typeId = 7;
 
@@ -50,7 +50,7 @@ class InsightsAdapter extends TypeAdapter<InsightModel> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is InsightsAdapter &&
+      other is InsightModelAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
