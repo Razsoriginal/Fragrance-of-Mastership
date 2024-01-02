@@ -2,7 +2,7 @@
 
 ![App Logo](app_logo.png)
 
-This Flutter application is designed for Android devices and is part of The Strong Rope project, an initiative by The Strong Rope organization (https://thestrongrope.com). Fragrance of Mastership provides access to various features and resources related to Islamic traditions, including Hadiths, blogs, insights, events, quizzes, notifications, and class statistics.
+This Flutter application is designed for Android & IOS devices. Fragrance of Mastership provides access to various features and resources related to Islamic traditions, including Hadiths, blogs, insights, events, quizzes, notifications, and class statistics.
 
 ## Features
 
@@ -47,6 +47,3 @@ Contributions are welcome and encouraged! If you find any bugs or issues with th
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Credits
-
-This app is created and maintained by [The Strong Rope organization](https://thestrongrope.com).
