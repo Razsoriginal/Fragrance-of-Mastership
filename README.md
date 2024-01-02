@@ -39,10 +39,6 @@ To install and run this app on your Android device, follow these steps:
 4. Connect your Android device to your computer.
 5. Build and run the app on your device.
 
-## Contributing
-
-Contributions are welcome and encouraged! If you find any bugs or issues with the app, please submit an issue on the [GitHub repository](https://github.com/yourusername/your-repository-name/issues). If you would like to contribute to the codebase, please fork the repository and submit a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
